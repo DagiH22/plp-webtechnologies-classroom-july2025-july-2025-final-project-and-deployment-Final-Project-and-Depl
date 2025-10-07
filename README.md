@@ -1,6 +1,7 @@
 # Task-Wave
 This is a simple multi-page front-end app that helps you stay organized and track what you have planned for the day.
 It has separate Home and About pages for better structure and navigation.
+## See Live [https://plptaskwave.netlify.app/](https://plptaskwave.netlify.app/)
 ## 🚀 Features
 - ➕  Add new tasks
 - 🗑️ Delete tasks
