@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./images/to-do-list.png" />
+  <title>Task Wave</title>
+</head>
+<body>
+
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <a class="nav-logo" href="index.html">Task Wave</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="tasks.html" class="active">Tasks</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="bg" aria-hidden="true">
+      <header>
+        <h1>Task Wave</h1>
+        <button class="modeToggle" aria-label="Toggle theme">
+          <img class="modeImg" src="./images/sun-svgrepo-com.svg" alt="day/night mode">
+        </button>
+      </header>
+    </div>
+
+    <main class="mainContainer">
+      <section class="newTaskContainer">
+        <input type="text" class="newTask" placeholder="Write task here ...">
+        <button class="add"><img class="addImg" src="./images/add-plus-circle-svgrepo-com.svg" alt="add"> Add Task</button>
+      </section>
+
+      <ul class="listOfTasks"></ul>
+    </main>
+
+    <div class="tabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="active">Active</button>
+      <button class="tab" data-filter="completed">Completed</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 <a href="https://github.com/DagiH22" target="_blank" rel="noopener noreferrer">Dagmawi Heywot</a>. All rights reserved.
+  </footer>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>

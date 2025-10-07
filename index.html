@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Wave | Home</title>
+
+ 
+  <script>
+    (function(){
+      try {
+        const t = localStorage.getItem('taskwave-theme');
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch(e){}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./images/to-do-list.png" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <a class="nav-logo" href="index.html">Task Wave</a>
+
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <button class="modeToggle" aria-label="Toggle theme">
+        <img class="modeImg" src="./images/sun-svgrepo-com.svg" alt="Toggle theme" width="26" height="26">
+      </button>
+    </div>
+  </nav>
+
+  <main class="home">
+    <div class="home-content">
+      <h1>Stay Organized with <span>Task Wave</span></h1>
+      <p class="lead">
+        Your personal productivity companion — create, track and finish tasks easily.
+      </p>
+      <a href="tasks.html" class="btn">Open Tasks</a>
+    </div>
+
+    <img class="home-img" src="./images/bg.jpg" alt="Task Wave hero" />
+  </main>
+
+  <footer>
+    &copy; 2025 <a href="https://github.com/DagiH22" target="_blank" rel="noopener noreferrer">Dagmawi Heywot</a>. All rights reserved.
+  </footer>
+
+  
+  <script src="theme.js" defer></script>
+</body>
+</html>
